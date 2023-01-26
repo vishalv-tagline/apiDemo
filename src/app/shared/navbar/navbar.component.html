@@ -1,0 +1,19 @@
+<div class="container-fluid mt-2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand px-2" [routerLink]="'home'"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxB08bIxC5y3y-rvi_Y_jjhRZZ1EDb2oj3-8INKIxBll55W_IXVbaY5VwxO8cXIuOAHw&usqp=CAU"
+                height="100px" width="100px" style="border-radius: 55%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" [routerLink]="'home'" [routerLinkActive]="'isActive'"
+                    style="font-size: 23px;">Home</a>
+                <a class="nav-item nav-link" [routerLink]="'/product'" [routerLinkActive]="'isActive'"
+                    style="font-size: 23px;">Products</a>
+            </div>
+        </div>
+    </nav>
+</div>
