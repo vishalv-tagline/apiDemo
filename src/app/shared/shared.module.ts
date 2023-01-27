@@ -4,9 +4,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from '../feature/home/home.component';
 import { RouterModule } from '@angular/router';
 
-
-
-
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -20,4 +17,8 @@ import { RouterModule } from '@angular/router';
     NavbarComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+  constructor() {
+    console.log('Shared Module running');
+  }
+}

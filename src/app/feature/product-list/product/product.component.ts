@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonService } from 'src/app/services/common.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class ProductComponent implements OnInit {
 
 
   public productData: any = []
-  constructor(private commonService: CommonService) { }
+  constructor(private commonService: CommonService, private router: Router) { }
 
   ngOnInit(): void {
     this.patchProduct();
@@ -21,5 +22,12 @@ export class ProductComponent implements OnInit {
       this.productData = response
       console.log('this.productData :>> ', this.productData.products);
     })
+  }
+
+  productDetails(id: number) {
+    if (id) {
+      this.router.navigate([`product/productlist/${id}`])
+    }
+    console.log('productId :>> ', id);
   }
 }

@@ -19,7 +19,6 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     SharedModule
   ],
-  exports: [SharedModule],
   providers: [],
   bootstrap: [AppComponent]
 })

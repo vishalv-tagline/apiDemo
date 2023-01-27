@@ -19,9 +19,10 @@
                     <li class="list-group-item"><span class="fw-bold">Rating</span> : <span
                             class="text-danger">{{product.rating}} &#37; </span></li>
                 </ul>
-                <button type="button" class="btn btn-md btn-primary w-25 p-2 m-2">
+                <a type="button" class="btn btn-md btn-primary w-25 p-2 m-2" (click)="productDetails(product.id)"
+                    [routerLink]="'app-per-product'">
                     <i class="fa-solid fa-cart-plus"></i>
-                </button>
+                </a>
             </div>
         </div>
     </div>
